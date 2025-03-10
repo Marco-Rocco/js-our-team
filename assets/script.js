@@ -60,11 +60,23 @@ selectElement(container, teamMembers)
 
 //creiamo una funzione per automatizzare la creazione delle card
 function selectElement (parent, members) {
+console.log(members)
 
-  console.log(members)
+//creaiamo una variabile contenuto da riempire con il ciclo
+let items =''
+
 
   for ( let i = 0; i < members.length; i++) {
     const currentElement = members[i];
     console.log(currentElement)
+
+    items += createCard(currentElement)
   }
+
+  // inseriamo il contenuto dentro l'html del contenitore
+  parent.innerHTML= items
+}
+
+function createCard(card){
+  return '<p> sono demoralizzato </p>'
 }
