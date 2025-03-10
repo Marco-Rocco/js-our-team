@@ -36,3 +36,35 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+
+/*
+<div class="card" style="width: 18rem;">
+                
+                <img id="profilep" src="img/female1.png" class="card-img-top" alt="pfp">
+                <div class="card-body">
+
+                    <p id="name">nonnt</p>
+                    <p id="name">nonna</p>
+
+</div>
+*/
+
+//colleghiamo il container
+const container = document.querySelector('.container')
+console.log(container)
+
+
+
+selectElement(container, teamMembers)
+
+//creiamo una funzione per automatizzare la creazione delle card
+function selectElement (parent, members) {
+
+  console.log(members)
+
+  for ( let i = 0; i < members.length; i++) {
+    const currentElement = members[i];
+    console.log(currentElement)
+  }
+}
