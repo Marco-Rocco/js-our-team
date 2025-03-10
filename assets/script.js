@@ -77,6 +77,21 @@ let items =''
   parent.innerHTML= items
 }
 
-function createCard(card){
-  return '<p> sono demoralizzato </p>'
+function createCard(currentElement){
+
+  console.log(currentElement)
+
+  return ` <div class="col">
+                <div class="card" style="width: 18rem;">
+                
+                <img id="profilep" src= ${currentElement.img} class="card-img-top" alt="pfp">
+                <div class="card-body">
+
+                    <p id="name">${currentElement.name}</p>
+                    <p id="name">${currentElement.role}</p>
+
+                </div>
+              </div>
+              
+            </div>`
 }
