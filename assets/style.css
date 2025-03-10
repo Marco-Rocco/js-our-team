@@ -1,0 +1,27 @@
+section {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: black;
+    width: 400px;
+    display: flex;
+ }
+
+.card-body{
+    color: white;
+    padding: 10px 50px 10px 20px;
+}
+
+.card img {
+    width: 150px;
+}
