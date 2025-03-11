@@ -89,8 +89,8 @@ function createCard(currentElement){
                 <div class="card-body">
 
                     <p id="name">${currentElement.name}</p>
-                    <p id="name">${currentElement.role}</p>
-                    <p id="name">${currentElement.email}</p>
+                    <p id="role">${currentElement.role}</p>
+                    <p id="email">${currentElement.email}</p>
 
                 </div>
               </div>
