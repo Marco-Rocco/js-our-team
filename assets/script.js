@@ -97,3 +97,41 @@ function createCard(currentElement){
               
           `
 }
+
+
+////////////
+
+const memberForm = document.getElementById('memberform')
+console.log(memberForm)
+
+  let newName = document.getElementById('newname')
+  let newRole = document.getElementById('newrole')
+  let newEmail = document.getElementById('newemail')
+  let newImg = document.getElementById('newimg')
+
+memberForm.addEventListener('submit', function(event){
+    event.preventDefault();
+
+    console.log('clickketto')
+
+    let newNameValue = newName.value;
+    let newRoleValue = newRole.value;
+    let newEmailValue = newEmail.value;
+    let newImgValue = newImg.value;
+
+    // console.log(newNameValue, newRoleValue, newImgValue)
+
+    const newMember = {
+    name: newNameValue,
+    role: newRoleValue,
+    email: newEmailValue,
+    img: newImgValue
+    }
+
+    console.log(newMember)
+
+    teamMembers.push(newMember)
+    console.log(teamMembers)
+
+    selectElement(container, teamMembers)
+})
