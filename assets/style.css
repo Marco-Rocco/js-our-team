@@ -40,3 +40,15 @@ section {
 .card img {
     width: 150px;
 }
+
+
+#memberform {
+    text-align: center;
+    margin: 100px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
